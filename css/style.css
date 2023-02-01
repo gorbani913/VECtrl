@@ -3919,13 +3919,15 @@ input[type="button"].btn-block {
 }
 
 .nav {
-  position: fixed;
+
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  /*saeed added*/
   z-index: 2 !important;
+  position: fixed;
 }
 
 .nav-link {
