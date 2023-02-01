@@ -3919,11 +3919,13 @@ input[type="button"].btn-block {
 }
 
 .nav {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  z-index: 2 !important;
 }
 
 .nav-link {
@@ -9662,10 +9664,10 @@ h4, h5, h6 {
 .videocontent {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
-  padding: 10px;
+  width: 100%;*/
+  padding: 5px;
 }
 
 #myBtn {
