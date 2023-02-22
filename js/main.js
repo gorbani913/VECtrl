@@ -1,6 +1,11 @@
 (function ($) {
     "use strict";
 
+    
+$(document).ready(function(){
+    $(this).scrollTop(1);
+});
+
     $('.navbar').css({"display":"flex","position":"absolute"});
    
     $(document).ready(function() {
