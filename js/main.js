@@ -1,6 +1,22 @@
 (function ($) {
     "use strict";
 
+    $('.navbar').css({"display":"flex","position":"absolute"});
+   
+    $(document).ready(function() {
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            var x = $("#MyNav").position();
+           
+            if (y > x.top) {
+                $('.navbar').fadeIn().css({"display":"flex","position":"fixed","top":"0"});
+            } else {
+                $('.navbar').css({"display":"flex","position" : "static"});
+            }
+            });
+    });
+
+/*
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
@@ -9,7 +25,7 @@
             $('.navbar').fadeOut('slow').css('display', 'none');
         }
     });
-
+*/
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a, .btn-scroll").on('click', function (event) {
